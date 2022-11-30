@@ -89,7 +89,7 @@ update tbl_Ator set sexo = 'M' where id_ator = 21;
 
 update tbl_Ator set sexo = 'M' where id_ator = 24;
 
-update tbl_Ator set nome_autor = 'Silvestre Stallone' where id_ator = 9;
+update tbl_Ator set nome_ator = 'Silvestre Stallone' where id_ator = 9;
 
 select * from tbl_Ator;
 
