@@ -1,0 +1,51 @@
+.registerContainer{
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../../assets/images/background.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInput{
+    animation: myTranslate;
+    animation-duration: 3s;
+    animation-iteration-count:initial;
+
+    width: 70%;
+    height: 90%;
+    background-color: #495561;
+    filter:opacity(80%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+.containerButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.registerTitle{
+    color: #fff;
+    font-family: cursive;
+    text-align: center;
+}
+
+.labelText{
+    color: #000;
+    font-weight: 900;
+}
+
+@keyframes myTranslate{
+    50% {transform: scale(0.1, 0.1);}
+}
