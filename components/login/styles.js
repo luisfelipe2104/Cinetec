@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import bg from '../../../assets/images/background.webp'
-const Container = styled.div`
+export const Container = styled.div`
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();
     background-position: center;
     background-size: cover;
@@ -10,5 +9,3 @@ const Container = styled.div`
     align-items: center;
     height: 100vh;
 `
-
-export { Container }
