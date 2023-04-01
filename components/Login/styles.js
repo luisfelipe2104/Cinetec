@@ -21,6 +21,7 @@ export const Title = styled.h1`
     width: 100%;
     padding: 20px 0 0 0;
     font-size: 40px;
+    color: #FFF;
 `
 
 export const InputGroup = styled.div`
@@ -55,6 +56,7 @@ export const Input = styled.input`
 
 export const Label = styled.label`
     font-size: 16px;
+    color: #FFF;
 `
 
 export const ButtonContainer = styled.div`
@@ -74,4 +76,5 @@ export const Button = styled.button`
 
 export const Link = styled.a`
     font-size: 16px;
+    color: #FFF;
 `
