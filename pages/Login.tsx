@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { useState } from "react";
 import {
   Container,
   Title,
@@ -8,9 +10,16 @@ import {
   FormContainer,
   ButtonContainer,
   Button,
-  Link,
-} from "./styles";
+  Link as LinkComponent,
+} from "../components/Login/styles";
 function Login() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const handleLogin = async () => {
+    console.log(email, password);
+  }
+
   return (
     <div className="background-image">
       <Container>
@@ -19,17 +28,17 @@ function Login() {
           <InputContainer>
             <InputGroup>
               <Label>Email:</Label>
-              <Input />
+              <Input onChange={(e) => setEmail(e.target.value)} />
             </InputGroup>
             <InputGroup>
               <Label>Password:</Label>
-              <Input />
+              <Input onChange={(e) => setPassword(e.target.value)} />
             </InputGroup>
           </InputContainer>
         </FormContainer>
         <ButtonContainer>
-          <Button>Login</Button>
-          <Link>Don't you have an account?</Link>
+          <Button onClick={() => handleLogin()}>Login</Button>
+          <Link passHref legacyBehavior href={'Register'}><LinkComponent>Don't you have an account?</LinkComponent></Link>
         </ButtonContainer>
       </Container>
     </div>
