@@ -13,7 +13,7 @@ export const Container = styled.div`
     border-radius: 15px;
     flex-direction: column;
     padding: 0 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 `
 
 export const Title = styled.h1`
