@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Login/styles.js", "pages/api/user/createUser.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Login/styles.js", "pages/api/user/createUser.ts"],
   "exclude": ["node_modules"]
 }
