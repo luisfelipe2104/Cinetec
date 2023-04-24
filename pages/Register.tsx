@@ -11,6 +11,7 @@ import {
     Button,
     Link as LinkComponent,
   } from "../components/Register/styles";
+import api from '../helpers/api';
 import { useState } from 'react';
   function Register() {
     const [name, setName] = useState('')
@@ -19,6 +20,11 @@ import { useState } from 'react';
 
     const handleRegister = async () => {
       console.log(name, email, password)
+      const data = {email: email, pass: password, name: name}
+      api.post(`/user/createUser`, data)
+      .then((res) => {
+        console.log(res);
+      })
     }
 
     return (
